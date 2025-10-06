@@ -1,0 +1,318 @@
+version: "3.1"
+
+intents:
+  # General
+  - greet
+  - goodbye
+  - thank
+  - ask_bot_identity
+  - ask_about_company
+  - ask_about_location
+  - ask_contact_info
+  - ask_for_demo
+  - ask_about_support
+
+  # Comparison & Recommendations
+  - compare_ednect_desalite
+  - compare_any_products
+  - ask_recommendation
+  - ask_multiple_products
+  
+  # Ednect
+  - ask_about_ednect
+  - ask_ednect_features
+  - ask_ednect_pricing
+  - ask_ednect_clients
+  - ask_ednect_implementation
+  
+  # Desalite Connect
+  - ask_about_desalite
+  - ask_desalite_features
+  - ask_desalite_clients
+  
+  # TransTrack
+  - ask_about_transtrack
+  - ask_transtrack_features
+  - ask_transtrack_benefits
+  - ask_transtrack_services
+  
+  # IceBox
+  - ask_about_icebox
+  - ask_icebox_features
+  - ask_icebox_workflow
+  - ask_icebox_benefits
+  
+  # Product Comparison
+  - compare_products
+  
+  # Specific Features
+  - ask_fee_management
+  - ask_attendance_system
+  - ask_student_management
+  - ask_staff_management
+  - ask_integration
+  - ask_customization
+  
+  # General Queries
+  - ask_pricing_general
+  - ask_security
+  - ask_implementation_time
+  - ask_training
+
+entities:
+  - product_name
+  - feature_name
+  - institute_type
+
+slots:
+  product_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: product_name
+
+responses:
+  # ============= GENERAL RESPONSES =============
+  utter_greet:
+    - text: "Hello! Welcome to Vasp Technologies. We offer School Management (Ednect & Desalite Connect), Transport Management (TransTrack), and Cold Storage Management (IceBox) solutions. How can I assist you today?"
+  
+  utter_bot_identity:
+    - text: "Hello! I'm VaspX, an AI assistant for Vasp Technologies.\n\nVasp Technologies offers:\n• Ednect - School Management ERP (10+ years experience)\n• Desalite Connect - School Management ERP (5+ years experience)\n• TransTrack - Transport Management System\n• IceBox - Cold Storage Management System\n\nI can help you with:\n✓ Product information and features\n✓ Comparisons between products\n✓ Implementation details\n✓ Client references\n✓ Demo requests\n✓ Contact information\n\nWhat would you like to know about?"
+
+  utter_goodbye:
+    - text: "Thank you for your interest! Feel free to reach out anytime. Have a great day!"
+  
+  utter_thank:
+    - text: "You're welcome! Is there anything else I can help you with?"
+  
+  # ============= EDNECT RESPONSES =============
+  utter_about_ednect:
+    - text: "Ednect is a School Management Software developed by Vasp Technologies with over a decade of experience. It's a Modern Cloud ERP that revolutionizes educational systems with innovative technology and user-friendly, cost-effective features. It includes all necessary components to keep a school running smoothly."
+  
+  utter_ednect_features:
+    - text: "Ednect offers these comprehensive modules:\n
+    • Staff Management System - Organize staff data in the cloud\n
+    • HR Management System - Employee database, salary, performance, attendance\n
+    • Student Management System - Admission counseling, circulars, SMS, lesson plans\n
+    • Fee Management System - Fee dashboard, online payment gateway\n
+    • Report Management System - Organized reports for decision-making\n
+    • Attendance Management System - Track student attendance and leaves\n
+    • Time-table Management System - Efficient scheduling\n
+    • Exam Result Management System - Streamlined examination process"
+  
+  utter_ednect_clients:
+    - text: "Ednect is trusted by several institutions including:\n• Heritage Public School\n• Reality Public School\n• Seppa Public School\n\nIn the past 10 years, we've served 500+ clients and completed 1K+ developments."
+  
+  utter_ednect_pricing:
+    - text: "Ednect offers budgeted, cost-effective services designed for complete customer satisfaction. For specific pricing details, please request a free demo or contact us at +91 7099020876."
+  
+  utter_ednect_implementation:
+    - text: "Ednect implementation is straightforward:\n1. Our team works closely with your institution\n2. We guide you through setup and configuration\n3. Comprehensive training for staff\n4. Smooth transition and deployment\n\nThe system is highly customizable to fit your requirements. We provide online and in-person support throughout."
+  
+  # ============= DESALITE CONNECT RESPONSES =============
+  utter_about_desalite:
+    - text: "Desalite Connect is a Complete School Management ERP with 5+ years of experience. It provides user-friendly, efficient solutions for educational institutions with features like Admission Management, Report-card Management, Automated Attendance, Fee Management, Library Management, Online Assessment, and Digital Evaluation systems."
+  
+  utter_desalite_features:
+    - text: "Desalite Connect offers:\n
+    • Staff Management - Cloud-based staff data organization\n
+    • HR Management - Complete employee database\n
+    • Student Management - Admission counseling and communication\n
+    • Fee Management - Integrated payment gateway\n
+    • Report Management - Timely, organized information\n
+    • Attendance Management - Comprehensive tracking tool\n
+    • Time Table Management - User-friendly scheduling\n
+    • Exam Result Management - Simplified examination process\n
+    Plus: Library Management, Online Assessment, Digital Evaluation"
+  
+  utter_desalite_clients:
+    - text: "Desalite Connect is used by prestigious institutions:\n• Saint Francis De Sales Schools (Narengi, Dhemaji, Bahalpur, Pasighat, Medziphema)\n• Saint Francis De Sales College, Aalo\n• Queenie Secondary School, Shillong\n• Green Mount School, Itanagar\n• Shalom Public School, Guwahati\n• NPS International School, Guwahati\n• All Saints Hr. Sec. School, Peren\n• St. Xavier's High School, Mushalpur\n• Nand English High School, Narengi"
+  
+  # ============= TRANSTRACK RESPONSES =============
+  utter_about_transtrack:
+    - text: "TransTrack is a premier Transport Management System (TMS) dedicated to revolutionizing transportation needs. We provide efficient, cost-effective, and reliable solutions for optimizing supply chains and ensuring seamless movement of goods globally."
+  
+  utter_transtrack_features:
+    - text: "TransTrack offers comprehensive TMS features:\n
+    • Transportation Planning & Optimization - Strategic plans with data-driven insights\n
+    • Carrier Selection & Management - Vast network of trusted carriers\n
+    • Real-Time Tracking & Visibility - Complete shipment monitoring\n
+    • Route Optimization - Minimize transit time and fuel costs\n
+    • Load Consolidation - Reduce shipping costs and environmental impact\n
+    • Supply Chain Analytics - Data-driven decision making\n
+    • Compliance & Regulatory Support - Stay compliant with all standards"
+  
+  utter_transtrack_benefits:
+    - text: "Why Choose TransTrack?\n
+    ✓ Experience: Years of industry expertise\n
+    ✓ Reliability: Meet deadlines consistently\n
+    ✓ Cost Savings: Optimize transportation costs\n
+    ✓ Customer-Centric: Personalized solutions\n
+    ✓ Improved Customer Service\n
+    ✓ Increased Profitability\n
+    ✓ Reduced Risk\n
+    ✓ Better Analytics & Visibility"
+  
+  utter_transtrack_services:
+    - text: "TransTrack provides:\n• Strategic transportation planning\n• Carrier vetting and management\n• Advanced tracking technology\n• Route optimization considering traffic, weather, and capacity\n• Load consolidation expertise\n• Comprehensive supply chain analytics\n• Full compliance and regulatory support\n\nContact: +91 8811047292 / +91 7099020876"
+  
+  # ============= ICEBOX RESPONSES =============
+  utter_about_icebox:
+    - text: "IceBox is a cutting-edge Cold Storage Management System designed to optimize storage processes. It ensures materials are categorized, tracked, and easily retrievable with advanced analytics, real-time inventory management, and robust security features for all types of stored materials."
+  
+  utter_icebox_features:
+    - text: "IceBox offers transformative features:\n
+    • Inventory Management - Track any stored item with batch, brand, expiry, item, and rack-wise sorting\n
+    • Temperature Control - Advanced precision control with real-time alerts\n
+    • Security Features - Comprehensive monitoring and safety protocols\n
+    • Organized Reports - Item-wise, storage-wise, daily chamber, and vehicle reports\n
+    • Detailed Billing - Labour bills, order bills, rental bills with full transparency\n
+    • Digital Records - Efficient data management\n
+    • Real-Time Data Access\n
+    • Multi-Storage Support"
+  
+  utter_icebox_workflow:
+    - text: "IceBox Workflow Process:\n
+    1. Vehicle Arrival → Gate Entry → Service Allocation\n
+    2. Reference ID Generation\n
+    3. Weigh Bridge: Weight Capture → Entry → Payment → Document Generation\n
+    4. Chamber Process: Goods In/Out/Shifting → Labour Allocation → Authorization → Document Generation\n
+    5. Post Chamber: Weight Recording for Discrepancy Tracking\n
+    6. Exit: Pass Generation → Vehicle Departure after Approval\n
+    All processes are automated without manual interference!"
+  
+  utter_icebox_benefits:
+    - text: "Why Choose IceBox?\n
+    ✓ Digital Records for Efficiency\n
+    ✓ Simplified Goods Tracking\n
+    ✓ Real-Time Data Access\n
+    ✓ Multi-Storage Support\n
+    ✓ Improved Efficiency\n
+    ✓ Increased Profitability\n
+    ✓ Higher Customer Retention\n
+    ✓ Higher Space Utilization\n
+    ✓ Temperature Precision with Alerts\n
+    ✓ Complete Security Monitoring"
+  
+  # ============= CONTACT & SUPPORT RESPONSES =============
+  utter_contact_info:
+    - text: "Contact Information:\n
+    📞 Ednect/General: +91 7099020876\n
+    📞 TransTrack/IceBox: +91 8811047292\n
+    📧 Email: [email protected] / contact@vasptechnologies.com\n
+    📍 Location: Vasp Technologies Pvt. Ltd., #26, D. Neog Path, Ananda Nagar, G.S. Road, Guwahati - 781005, Assam, India\n
+    🕐 Hours: Mon-Sat, 9:00 AM - 6:00 PM"
+  
+  utter_request_demo:
+    - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 [email protected]\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
+  
+  utter_about_support:
+    - text: "We provide dedicated support:\n
+    ✓ Highly experienced team\n
+    ✓ Online and in-person assistance\n
+    ✓ Comprehensive training sessions for staff\n
+    ✓ Hands-on instruction\n
+    ✓ Implementation guidance at every step\n
+    ✓ System upgrades and maintenance\n
+    Our team is available to resolve any ERP-related issues promptly."
+  
+  # ============= COMPANY RESPONSES =============
+  utter_about_company:
+    - text: "Vasp Technologies is a leading ERP Software Developer with over 10 years of experience. We've served 500+ clients and completed 1K+ developments across the region. We specialize in:\n• School Management (Ednect & Desalite Connect)\n• Transport Management (TransTrack)\n• Cold Storage Management (IceBox)\n\nOur mission is to digitalize institutions and streamline operations with innovative, cost-effective solutions."
+  
+  utter_location:
+    - text: "We're located in Guwahati, Assam:\n📍 Vasp Technologies Pvt. Ltd.\n#26, D. Neog Path, Ananda Nagar\nG.S. Road, Guwahati - 781005\nAssam, India\n\n🕐 Office Hours: Monday-Saturday, 9:00 AM - 6:00 PM"
+  
+  # ============= PRODUCT COMPARISON =============
+  utter_compare_products:
+    - text: "Our Products Overview:\n
+    🏫 EDNECT & DESALITE CONNECT: School Management ERP systems with similar features. Both offer comprehensive modules for educational institutions.\n
+    🚛 TRANSTRACK: Transport & Logistics Management System for optimizing supply chains and transportation operations.\n
+    ❄️ ICEBOX: Cold Storage Management System for warehouse and temperature-controlled storage.\n
+    Which product would you like to know more about?"
+  
+  # ============= SPECIFIC FEATURES =============
+  utter_fee_management:
+    - text: "Fee Management Features:\n• Fee Dashboard with dues-receipts, daily collection, expected payments\n• Integrated online payment gateway\n• Automated billing\n• Discrepancy prevention\n• Real-time fee tracking\n• Parent-friendly payment system\nAvailable in both Ednect and Desalite Connect."
+  
+  utter_attendance_system:
+    - text: "Attendance Management:\n• Integrated and comprehensive tool\n• Seamless student attendance tracking\n• Leave management\n• Automated recording\n• Real-time reports\n• Cloud-based access\nAvailable in both Ednect and Desalite Connect."
+  
+  utter_student_management:
+    - text: "Student Management System:\n• Admission counseling assistance\n• Student information database\n• Generate circulars and SMS instantly\n• Multi-language communication\n• Lesson plans and teacher's calendar\n• Student portal access\n• Grade and assignment tracking\nAvailable in both Ednect and Desalite Connect."
+  
+  utter_staff_management:
+    - text: "Staff/HR Management System:\n• Complete staff database in cloud\n• Salary details and payroll\n• Performance evaluation\n• Contact information\n• Promotion tracking\n• Attendance management\n• Easy data access\nIntersection of IT and Human Resource management."
+  
+  utter_integration:
+    - text: "Integration Capabilities:\n✓ Seamless integration with Learning Management Systems (LMS)\n✓ Finance software integration\n✓ HR management tools\n✓ Third-party systems\n✓ Unified and efficient workflow\n\nOur systems are designed for easy integration to create a connected ecosystem."
+  
+  utter_customization:
+    - text: "Customization:\n✓ Highly flexible and customizable\n✓ Tailored to your institution's unique requirements\n✓ We work closely with you to meet specific needs\n✓ Specialized instruction for staff\n✓ Adaptive to business requirements\n\nAll our products can be customized to fit your exact needs!"
+  
+  # ============= PRICING & SECURITY =============
+  utter_pricing:
+    - text: "For pricing information:\n\n📞 Contact us for detailed pricing:\n• Ednect/Desalite/General: +91 7099020876\n• TransTrack/IceBox: +91 8811047292\n\n📧 Email: [email protected]\n\nOur services are:\n✓ Cost-effective and budget-friendly\n✓ Customized to your requirements\n✓ Transparent with no hidden costs\n\nWe offer a FREE DEMO to discuss your specific needs and provide accurate pricing. Would you like to schedule one?"
+  
+  utter_security:
+    - text: "Security & Privacy:\n✓ Comprehensive data protection\n✓ GDPR and CCPA compliant\n✓ Secure cloud storage\n✓ Privacy policy in place\n✓ Access control and monitoring\n✓ Regular security updates\n\nYour data security is our priority. Visit our website for detailed privacy policy."
+  
+  utter_implementation:
+    - text: "Implementation Process:\n1. Initial consultation and requirement analysis\n2. System customization to your needs\n3. Setup and configuration\n4. Comprehensive staff training\n5. Smooth transition and go-live\n6. Ongoing support\n\nTimeline varies based on institution size and requirements. Our team ensures timely completion with dedicated support throughout."
+  
+  utter_training:
+    - text: "Training & Support:\n✓ Comprehensive training sessions for all staff\n✓ Hands-on instruction\n✓ Training covers all system aspects\n✓ Online and in-person training available\n✓ Ongoing support after implementation\n✓ Documentation and resources provided\n\nWe ensure everyone can make the most of the system features!"
+
+  utter_default:
+    - text: "I'm here to help! I can provide information about:\n• Ednect (School Management)\n• Desalite Connect (School Management)\n• TransTrack (Transport Management)\n• IceBox (Cold Storage Management)\n\nWhat would you like to know more about?"
+
+actions:
+  # Custom Actions
+  - action_compare_products
+  - action_intelligent_response
+  - action_extract_context
+  - action_fallback_with_context
+  - action_provide_recommendation
+
+  - utter_greet
+  - utter_goodbye
+  - utter_thank
+  - utter_bot_identity
+  - utter_about_ednect
+  - utter_ednect_features
+  - utter_ednect_clients
+  - utter_ednect_pricing
+  - utter_ednect_implementation
+  - utter_about_desalite
+  - utter_desalite_features
+  - utter_desalite_clients
+  - utter_about_transtrack
+  - utter_transtrack_features
+  - utter_transtrack_benefits
+  - utter_transtrack_services
+  - utter_about_icebox
+  - utter_icebox_features
+  - utter_icebox_workflow
+  - utter_icebox_benefits
+  - utter_contact_info
+  - utter_request_demo
+  - utter_about_support
+  - utter_about_company
+  - utter_location
+  - utter_compare_products
+  - utter_fee_management
+  - utter_attendance_system
+  - utter_student_management
+  - utter_staff_management
+  - utter_integration
+  - utter_customization
+  - utter_pricing
+  - utter_security
+  - utter_implementation
+  - utter_training
+  - utter_default
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

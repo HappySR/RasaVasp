@@ -1,0 +1,32 @@
+# Configuration for Rasa endpoints
+
+# Server where action runs
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store for conversation history (optional - use for production)
+# tracker_store:
+#   type: sql
+#   dialect: postgresql
+#   url: localhost
+#   port: 5432
+#   username: postgres
+#   password: your_password
+#   db: rasa
+#   login_db: postgres
+
+# Event broker for streaming events (optional)
+# event_broker:
+#   type: sql
+#   dialect: postgresql
+#   host: localhost
+#   port: 5432
+#   username: postgres
+#   password: your_password
+#   db: rasa
+
+# Model storage (optional - for Rasa X)
+# models:
+#   url: http://localhost:5002
+#   token: ""
+#   wait_time_between_pulls: 10

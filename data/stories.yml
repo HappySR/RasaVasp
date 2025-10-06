@@ -1,0 +1,392 @@
+version: "3.1"
+
+stories:
+# ============= EDNECT STORIES =============
+- story: ask about ednect basic
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+
+- story: ednect features inquiry
+  steps:
+  - intent: ask_ednect_features
+  - action: utter_ednect_features
+
+- story: ednect full inquiry
+  steps:
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+  - intent: ask_ednect_features
+  - action: utter_ednect_features
+  - intent: ask_ednect_pricing
+  - action: utter_ednect_pricing
+
+- story: ednect clients and demo
+  steps:
+  - intent: ask_ednect_clients
+  - action: utter_ednect_clients
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: ednect implementation
+  steps:
+  - intent: ask_ednect_implementation
+  - action: utter_ednect_implementation
+  - intent: ask_training
+  - action: utter_training
+
+# ============= DESALITE STORIES =============
+- story: ask about desalite
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_desalite
+  - action: utter_about_desalite
+
+- story: desalite features and clients
+  steps:
+  - intent: ask_desalite_features
+  - action: utter_desalite_features
+  - intent: ask_desalite_clients
+  - action: utter_desalite_clients
+
+- story: desalite full inquiry
+  steps:
+  - intent: ask_about_desalite
+  - action: utter_about_desalite
+  - intent: ask_desalite_features
+  - action: utter_desalite_features
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+# ============= TRANSTRACK STORIES =============
+- story: ask about transtrack
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_transtrack
+  - action: utter_about_transtrack
+
+- story: transtrack features inquiry
+  steps:
+  - intent: ask_transtrack_features
+  - action: utter_transtrack_features
+
+- story: transtrack full inquiry
+  steps:
+  - intent: ask_about_transtrack
+  - action: utter_about_transtrack
+  - intent: ask_transtrack_features
+  - action: utter_transtrack_features
+  - intent: ask_transtrack_benefits
+  - action: utter_transtrack_benefits
+
+- story: transtrack services and contact
+  steps:
+  - intent: ask_transtrack_services
+  - action: utter_transtrack_services
+  - intent: ask_contact_info
+  - action: utter_contact_info
+
+# ============= ICEBOX STORIES =============
+- story: ask about icebox
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_icebox
+  - action: utter_about_icebox
+
+- story: icebox features inquiry
+  steps:
+  - intent: ask_icebox_features
+  - action: utter_icebox_features
+
+- story: icebox workflow inquiry
+  steps:
+  - intent: ask_icebox_workflow
+  - action: utter_icebox_workflow
+
+- story: icebox full inquiry
+  steps:
+  - intent: ask_about_icebox
+  - action: utter_about_icebox
+  - intent: ask_icebox_features
+  - action: utter_icebox_features
+  - intent: ask_icebox_benefits
+  - action: utter_icebox_benefits
+
+- story: icebox workflow and contact
+  steps:
+  - intent: ask_icebox_workflow
+  - action: utter_icebox_workflow
+  - intent: ask_contact_info
+  - action: utter_contact_info
+
+# ============= PRODUCT COMPARISON STORIES =============
+- story: compare all products
+  steps:
+  - intent: compare_products
+  - action: utter_compare_products
+
+- story: compare and ask about specific
+  steps:
+  - intent: compare_products
+  - action: utter_compare_products
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+
+# ============= SPECIFIC FEATURES STORIES =============
+- story: fee management inquiry
+  steps:
+  - intent: ask_fee_management
+  - action: utter_fee_management
+
+- story: attendance system inquiry
+  steps:
+  - intent: ask_attendance_system
+  - action: utter_attendance_system
+
+- story: student management inquiry
+  steps:
+  - intent: ask_student_management
+  - action: utter_student_management
+
+- story: staff management inquiry
+  steps:
+  - intent: ask_staff_management
+  - action: utter_staff_management
+
+- story: integration inquiry
+  steps:
+  - intent: ask_integration
+  - action: utter_integration
+
+- story: customization inquiry
+  steps:
+  - intent: ask_customization
+  - action: utter_customization
+
+# ============= CONTACT & SUPPORT STORIES =============
+- story: contact information request
+  steps:
+  - intent: ask_contact_info
+  - action: utter_contact_info
+
+- story: demo request flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: support inquiry
+  steps:
+  - intent: ask_about_support
+  - action: utter_about_support
+  - intent: ask_training
+  - action: utter_training
+
+# ============= COMPANY INFORMATION STORIES =============
+- story: company information
+  steps:
+  - intent: ask_about_company
+  - action: utter_about_company
+
+- story: location inquiry
+  steps:
+  - intent: ask_about_location
+  - action: utter_location
+
+- story: company and contact
+  steps:
+  - intent: ask_about_company
+  - action: utter_about_company
+  - intent: ask_contact_info
+  - action: utter_contact_info
+
+# ============= PRICING & IMPLEMENTATION STORIES =============
+- story: general pricing inquiry
+  steps:
+  - intent: ask_pricing_general
+  - action: utter_pricing
+
+- story: security inquiry
+  steps:
+  - intent: ask_security
+  - action: utter_security
+
+- story: implementation inquiry
+  steps:
+  - intent: ask_implementation_time
+  - action: utter_implementation
+
+- story: training inquiry
+  steps:
+  - intent: ask_training
+  - action: utter_training
+
+# ============= COMPLETE INQUIRY FLOWS =============
+- story: complete ednect inquiry flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+  - intent: ask_ednect_features
+  - action: utter_ednect_features
+  - intent: ask_ednect_clients
+  - action: utter_ednect_clients
+  - intent: ask_ednect_pricing
+  - action: utter_ednect_pricing
+  - intent: ask_for_demo
+  - action: utter_request_demo
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: complete desalite inquiry flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_desalite
+  - action: utter_about_desalite
+  - intent: ask_desalite_features
+  - action: utter_desalite_features
+  - intent: ask_desalite_clients
+  - action: utter_desalite_clients
+  - intent: ask_contact_info
+  - action: utter_contact_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: complete transtrack inquiry flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_transtrack
+  - action: utter_about_transtrack
+  - intent: ask_transtrack_features
+  - action: utter_transtrack_features
+  - intent: ask_transtrack_benefits
+  - action: utter_transtrack_benefits
+  - intent: ask_for_demo
+  - action: utter_request_demo
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: complete icebox inquiry flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_icebox
+  - action: utter_about_icebox
+  - intent: ask_icebox_features
+  - action: utter_icebox_features
+  - intent: ask_icebox_workflow
+  - action: utter_icebox_workflow
+  - intent: ask_contact_info
+  - action: utter_contact_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+  # ============= MULTIPLE PRODUCT QUERIES =============
+- story: ask about multiple products
+  steps:
+  - intent: ask_multiple_products
+  - action: action_intelligent_response
+
+- story: multiple products with followup
+  steps:
+  - intent: ask_multiple_products
+  - action: action_intelligent_response
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+
+- story: contact information request
+  steps:
+  - intent: ask_contact_info
+  - action: utter_contact_info
+
+- story: demo request flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: thank and goodbye
+  steps:
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
+# ============= COMPARISON STORIES =============
+- story: compare ednect and desalite
+  steps:
+  - intent: compare_ednect_desalite
+  - action: action_compare_products
+
+- story: compare with context
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: compare_ednect_desalite
+  - action: action_compare_products
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: compare all products
+  steps:
+  - intent: compare_any_products
+  - action: action_compare_products
+
+- story: ask for recommendation
+  steps:
+  - intent: ask_recommendation
+  - action: action_provide_recommendation
+
+- story: recommendation with industry context
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_recommendation
+  - action: action_provide_recommendation
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+# ============= MIXED PRODUCT INQUIRIES =============
+- story: school management comparison
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+  - intent: ask_about_desalite
+  - action: utter_about_desalite
+  - intent: compare_products
+  - action: utter_compare_products
+
+- story: feature specific inquiry across products
+  steps:
+  - intent: ask_fee_management
+  - action: utter_fee_management
+  - intent: ask_student_management
+  - action: utter_student_management
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+# ============= GRATITUDE FLOWS =============
+- story: thank after information
+  steps:
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+  - intent: thank
+  - action: utter_thank
+
+- story: thank and goodbye
+  steps:
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye

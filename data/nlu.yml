@@ -1,0 +1,485 @@
+version: "3.1"
+
+nlu:
+
+- intent: compare_ednect_desalite
+  examples: |
+    - which is better ednect or desalite connect?
+    - compare ednect and desalite
+    - difference between ednect and desalite
+    - ednect vs desalite connect
+    - should I choose ednect or desalite?
+    - what's the difference between ednect and desalite?
+    - ednect or desalite which one is best?
+    - compare both school management systems
+    - difference between your school ERPs
+    - which school ERP should I buy?
+    - ednect and desalite comparison
+    - tell me difference ednect desalite
+
+- intent: compare_any_products
+  examples: |
+    - compare your products
+    - what's the difference between all products?
+    - which product is best for me?
+    - compare ednect transtrack icebox
+    - tell me about all your products
+    - what products do you have and what do they do?
+    - show me comparison of all products
+    - which product should I choose?
+
+- intent: ask_recommendation
+  examples: |
+    - which product do you recommend?
+    - what should I buy?
+    - best product for school
+    - best product for logistics
+    - recommend a product for me
+    - I need a solution for my business
+    - what fits my needs?
+    - suggest a product
+    - which one is right for me?
+    - I'm confused which to choose
+
+# ============= MULTIPLE PRODUCT QUERIES (NEW) =============
+- intent: ask_multiple_products
+  examples: |
+    - tell me about ednect and transtrack
+    - what are ednect desalite and icebox?
+    - explain all your products
+    - features of ednect desalite transtrack icebox
+    - do you have school and logistics software?
+    - I want to know about ednect and icebox
+    - tell me about school management and transport management
+
+# ============= ORIGINAL INTENTS (Keep all existing ones) =============
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - have a good day
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - appreciate it
+
+# ============= GREETINGS & GENERAL =============
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - have a good day
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - appreciate it
+
+# ============= EDNECT QUERIES =============
+- intent: ask_about_ednect
+  examples: |
+    - What is Ednect?
+    - Tell me about Ednect
+    - What does Ednect do?
+    - Ednect information
+    - school management ERP
+    - school management software
+    - educational ERP system
+    - Who developed Ednect?
+    - Tell me about Ednect features
+
+- intent: ask_ednect_features
+  examples: |
+    - What features does Ednect have?
+    - Ednect modules
+    - What can Ednect do?
+    - List Ednect features
+    - staff management in Ednect
+    - student management system
+    - fee management in Ednect
+    - attendance tracking Ednect
+    - exam result management
+    - timetable management
+    - HR management Ednect
+    - tell me its product features
+    - tell me ednect product features
+    - what are the features of ednect
+    - ednect features
+    - features of ednect
+    - product features of ednect
+    - tell me about ednect features
+
+- intent: ask_ednect_pricing
+  examples: |
+    - How much does Ednect cost?
+    - Ednect pricing
+    - Is Ednect affordable?
+    - What is the price of Ednect?
+    - Ednect budget
+    - cost effective school ERP
+
+- intent: ask_ednect_clients
+  examples: |
+    - Who uses Ednect?
+    - Ednect clients
+    - Which schools use Ednect?
+    - Ednect customer list
+
+- intent: ask_ednect_implementation
+  examples: |
+    - How to implement Ednect?
+    - Ednect setup process
+    - How long does Ednect implementation take?
+    - Ednect installation
+    - Is Ednect customizable?
+
+# ============= DESALITE CONNECT QUERIES =============
+- intent: ask_about_desalite
+  examples: |
+    - What is Desalite Connect?
+    - Tell me about Desalite
+    - Desalite Connect information
+    - What does Desalite do?
+    - Desalite school management
+    - Desalite ERP system
+
+- intent: ask_desalite_features
+  examples: |
+    - Desalite Connect features
+    - What modules does Desalite have?
+    - Desalite attendance system
+    - Desalite fee management
+    - Desalite student management
+    - admission management Desalite
+    - library management Desalite
+    - online assessment Desalite
+
+- intent: ask_desalite_clients
+  examples: |
+    - Who uses Desalite Connect?
+    - Desalite clients
+    - Which schools use Desalite?
+    - Desalite customer list
+    - Saint Francis schools
+    - Green Mount School
+
+# ============= TRANSTRACK QUERIES =============
+- intent: ask_about_transtrack
+  examples: |
+    - What is TransTrack?
+    - Tell me about TransTrack
+    - transport management system
+    - logistics management software
+    - TransTrack information
+    - What does TransTrack do?
+    - TMS system
+
+- intent: ask_transtrack_features
+  examples: |
+    - TransTrack features
+    - What can TransTrack do?
+    - transportation planning TransTrack
+    - route optimization
+    - real-time tracking TransTrack
+    - carrier management
+    - supply chain analytics
+    - load consolidation
+    - compliance support TransTrack
+
+- intent: ask_transtrack_benefits
+  examples: |
+    - Why choose TransTrack?
+    - TransTrack advantages
+    - Benefits of TransTrack
+    - How does TransTrack help business?
+    - TransTrack cost savings
+
+- intent: ask_transtrack_services
+  examples: |
+    - TransTrack services
+    - What services does TransTrack offer?
+    - transportation solutions
+    - logistics services
+
+# ============= ICEBOX QUERIES =============
+- intent: ask_about_icebox
+  examples: |
+    - What is IceBox?
+    - Tell me about IceBox
+    - cold storage management
+    - IceBox information
+    - What does IceBox do?
+    - warehouse management system
+    - cold storage software
+
+- intent: ask_icebox_features
+  examples: |
+    - IceBox features
+    - What can IceBox do?
+    - inventory management IceBox
+    - temperature control IceBox
+    - cold storage tracking
+    - security features IceBox
+    - organized reports IceBox
+    - detailed billing IceBox
+
+- intent: ask_icebox_workflow
+  examples: |
+    - IceBox workflow
+    - How does IceBox work?
+    - IceBox process
+    - vehicle arrival process
+    - chamber process IceBox
+    - weighbridge entry
+
+- intent: ask_icebox_benefits
+  examples: |
+    - Why choose IceBox?
+    - IceBox advantages
+    - Benefits of IceBox
+    - digital records benefit
+    - real-time data access
+
+# ============= CONTACT & SUPPORT =============
+- intent: ask_contact_info
+  examples: |
+    - How can I contact you?
+    - contact information
+    - phone number
+    - email address
+    - office location
+    - contact Ednect
+    - contact Desalite
+    - contact TransTrack
+    - contact IceBox
+    - Vasp Technologies contact
+
+- intent: ask_for_demo
+  examples: |
+    - I want a demo
+    - Request demo
+    - Can I get a free demo?
+    - Schedule a demo
+    - Show me how it works
+    - Free trial
+
+- intent: ask_about_support
+  examples: |
+    - Do you provide support?
+    - customer support
+    - technical support
+    - training available?
+    - implementation support
+    - dedicated support team
+
+# ============= COMPANY INFORMATION =============
+- intent: ask_about_company
+  examples: |
+    - Who is Vasp Technologies?
+    - Tell me about your company
+    - company information
+    - Who developed these products?
+    - How long have you been in business?
+    - company experience
+
+- intent: ask_about_location
+  examples: |
+    - Where are you located?
+    - office address
+    - Guwahati office
+    - location information
+    - Ananda Nagar address
+
+# ============= PRODUCT COMPARISON =============
+- intent: compare_products
+  examples: |
+    - What's the difference between Ednect and Desalite?
+    - Compare your products
+    - Which product should I choose?
+    - Ednect vs Desalite
+    - What products do you offer?
+
+# ============= SPECIFIC FEATURE QUERIES =============
+- intent: ask_fee_management
+  examples: |
+    - How does fee management work?
+    - fee collection system
+    - online payment gateway
+    - fee dashboard
+    - payment integration
+
+- intent: ask_attendance_system
+  examples: |
+    - How does attendance work?
+    - attendance tracking
+    - leave management
+    - student attendance system
+
+- intent: ask_student_management
+  examples: |
+    - student information system
+    - admission counseling
+    - student database
+    - student portal
+
+- intent: ask_staff_management
+  examples: |
+    - staff database
+    - employee management
+    - HR system
+    - salary management
+    - performance evaluation
+
+- intent: ask_integration
+  examples: |
+    - Can it integrate with other systems?
+    - LMS integration
+    - finance software integration
+    - third-party integration
+    - API available?
+
+- intent: ask_customization
+  examples: |
+    - Is it customizable?
+    - Can you customize the system?
+    - flexible solution
+    - tailored to our needs
+    - custom features
+
+# ============= PRICING & PLANS =============
+- intent: ask_pricing_general
+  examples: |
+    - How much does it cost?
+    - pricing information
+    - what are your prices?
+    - cost details
+    - affordable solution
+    - budget-friendly
+
+# ============= SECURITY & COMPLIANCE =============
+- intent: ask_security
+  examples: |
+    - Is the data secure?
+    - security features
+    - data protection
+    - privacy policy
+    - GDPR compliance
+    - data safety
+
+# ============= IMPLEMENTATION & TRAINING =============
+- intent: ask_implementation_time
+  examples: |
+    - How long does implementation take?
+    - setup time
+    - deployment process
+    - go-live timeline
+
+- intent: ask_training
+  examples: |
+    - Do you provide training?
+    - staff training
+    - user training sessions
+    - onboarding process
+    - learning resources
+
+- intent: ask_pricing_general
+  examples: |
+    - How much does it cost?
+    - pricing information
+    - what are your prices?
+    - cost details
+    - affordable solution
+    - budget-friendly
+    - pricing
+    - price
+    - what is the price
+    - how much
+    - cost
+    - what does it cost
+    - tell me about pricing
+    - pricing details
+    - what are the costs
+    - ednect pricing
+    - desalite pricing
+    - how much for ednect
+    - what is ednect price
+    - icebox pricing
+    - transtrack pricing
+    - what is pricing
+
+- intent: ask_recommendation
+  examples: |
+    - which product do you recommend?
+    - what should I buy?
+    - best product for school
+    - best product for logistics
+    - recommend a product for me
+    - I need a solution for my business
+    - what fits my needs?
+    - suggest a product
+    - which one is right for me?
+    - I'm confused which to choose
+    - what should i take for school?
+    - i have a school
+    - i have a school what should i use
+    - recommend for school
+    - which is best for school
+
+- intent: compare_ednect_desalite
+  examples: |
+    - which is better ednect or desalite connect?
+    - compare ednect and desalite
+    - difference between ednect and desalite
+    - ednect vs desalite connect
+    - should I choose ednect or desalite?
+    - what's the difference between ednect and desalite?
+    - ednect or desalite which one is best?
+    - compare both school management systems
+    - difference between your school ERPs
+    - which school ERP should I buy?
+    - ednect and desalite comparison
+    - tell me difference ednect desalite
+    - compare ednect and desallite connect
+    - ednect and desallite
+    - ednect vs desalite
+    - ednect or desalite
+
+- intent: ask_bot_identity
+  examples: |
+    - who are you?
+    - what are you?
+    - tell me about yourself
+    - who is this?
+    - what is your name?
+    - are you a bot?
+    - what do you do?
+    - introduce yourself
+    - who am I talking to?
+    - what's your name?
