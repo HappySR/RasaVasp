@@ -483,3 +483,189 @@ nlu:
     - introduce yourself
     - who am I talking to?
     - what's your name?
+
+# ============= OUT OF SCOPE / IRRELEVANT QUERIES =============
+- intent: out_of_scope
+  examples: |
+    - tech support number
+    - technical support number
+    - share tech support number
+    - give me tech support
+    - microsoft support
+    - apple support
+    - windows help
+    - my computer is not working
+    - fix my phone
+    - internet not working
+    - wifi problem
+    - printer issue
+    - random tech support
+    - I need help with my device
+    - laptop repair
+    - phone repair
+
+- intent: ask_job_vacancy
+  examples: |
+    - do you have any job openings?
+    - are you hiring?
+    - job vacancy
+    - job opportunities
+    - career opportunities
+    - I want to work with you
+    - are there any openings?
+    - recruitment
+    - can I join your company?
+    - job openings
+    - vacancies available
+    - careers at vasp
+    - hiring positions
+    - employment opportunities
+    - I'm looking for a job
+
+- intent: ask_purchase_process
+  examples: |
+    - how to get the software?
+    - how can I buy this?
+    - purchase process
+    - how to purchase?
+    - I want to buy
+    - how do I get started?
+    - acquisition process
+    - how to acquire the software?
+    - buying process
+    - how to order?
+    - I want to get the system
+    - help to get the software
+    - how to obtain
+    - procurement process
+    - I need to buy this
+
+- intent: ask_website
+  examples: |
+    - what is your website?
+    - website link
+    - company website
+    - your website url
+    - web address
+    - online presence
+    - where can I find you online?
+    - website address
+    - url
+
+- intent: ask_social_media
+  examples: |
+    - social media links
+    - facebook page
+    - linkedin profile
+    - twitter handle
+    - instagram account
+    - social media presence
+    - where are you on social media?
+
+- intent: ask_payment_methods
+  examples: |
+    - payment options
+    - how can I pay?
+    - payment methods
+    - do you accept credit cards?
+    - payment gateway
+    - what payment do you accept?
+    - billing options
+
+- intent: ask_refund_policy
+  examples: |
+    - refund policy
+    - can I get a refund?
+    - money back guarantee
+    - return policy
+    - cancellation policy
+    - what if I'm not satisfied?
+
+- intent: ask_trial_period
+  examples: |
+    - free trial
+    - trial period
+    - can I try before buying?
+    - demo period
+    - test the software
+    - evaluation period
+
+- intent: ask_system_requirements
+  examples: |
+    - system requirements
+    - what do I need to run this?
+    - hardware requirements
+    - software requirements
+    - minimum requirements
+    - technical specifications
+    - server requirements
+
+- intent: ask_mobile_app
+  examples: |
+    - mobile app
+    - do you have an app?
+    - android app
+    - ios app
+    - mobile version
+    - app download
+
+- intent: ask_data_migration
+  examples: |
+    - data migration
+    - can you migrate my data?
+    - transfer existing data
+    - import data
+    - data transfer process
+
+- intent: ask_competitors
+  examples: |
+    - who are your competitors?
+    - alternatives to your product
+    - similar products
+    - competing solutions
+    - other options
+
+- intent: ask_languages_supported
+  examples: |
+    - supported languages
+    - multi-language support
+    - language options
+    - available in other languages?
+    - regional language support
+
+- intent: chitchat_general
+  examples: |
+    - how are you?
+    - what's up?
+    - how's it going?
+    - nice weather
+    - tell me a joke
+    - what's your favorite color?
+    - do you like pizza?
+    - random question
+    - lol
+    - haha
+    - cool
+    - awesome
+    - great
+
+- intent: insult_or_abuse
+  examples: |
+    - you are stupid
+    - this is useless
+    - worst chatbot
+    - you suck
+    - garbage bot
+    - idiot
+    - useless
+    - waste of time
+
+- intent: ask_human_agent
+  examples: |
+    - I want to talk to a human
+    - connect me to a person
+    - human support
+    - speak to someone real
+    - I need a real person
+    - can I talk to a human?
+    - transfer to agent

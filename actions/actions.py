@@ -265,33 +265,82 @@ class ActionFallbackWithContext(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        user_message = tracker.latest_message.get('text', '')
+        user_message = tracker.latest_message.get('text', '').lower()
+        
+        # Check for job-related queries
+        if any(word in user_message for word in ['job', 'vacancy', 'hiring', 'career', 'recruitment', 'employment']):
+            response = """Thank you for your interest in career opportunities at Vasp Technologies!
+
+For information about job openings and career opportunities, please:
+📧 Email your resume to: [email protected]
+📞 Call: +91 7099020876
+
+You can also check our website or LinkedIn page for current openings.
+
+Is there anything else about our products I can help you with?"""
+            dispatcher.utter_message(text=response)
+            return []
+        
+        # Check for purchase/acquisition queries
+        if any(word in user_message for word in ['buy', 'purchase', 'get', 'acquire', 'obtain', 'order']):
+            response = """Great! Here's how to get started with our software:
+
+1️⃣ **Request a Free Demo**
+   📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)
+   📧 Email: [email protected]
+
+2️⃣ **Consultation**
+   Our team will understand your requirements
+
+3️⃣ **Customization & Quotation**
+   We'll provide a tailored solution and pricing
+
+4️⃣ **Agreement & Implementation**
+   Once approved, we begin setup and training
+
+Would you like to schedule a demo now?"""
+            dispatcher.utter_message(text=response)
+            return []
+        
+        # Check for unrelated tech support
+        if any(word in user_message for word in ['tech support', 'technical support', 'fix my', 'repair', 'not working', 'broken']):
+            if not any(word in user_message for word in ['ednect', 'desalite', 'transtrack', 'icebox', 'vasp']):
+                response = """I'm VaspX, an assistant for Vasp Technologies products (Ednect, Desalite Connect, TransTrack, and IceBox). I can only help with information about our products and services.
+
+For general tech support or unrelated queries, please contact the relevant service provider.
+
+How can I help you with Vasp Technologies products?"""
+                dispatcher.utter_message(text=response)
+                return []
         
         # Check if any product is mentioned
         products = []
-        if 'ednect' in user_message.lower():
+        if 'ednect' in user_message:
             products.append('Ednect')
-        if 'desalite' in user_message.lower():
+        if 'desalite' in user_message or 'desallite' in user_message:
             products.append('Desalite Connect')
-        if 'transtrack' in user_message.lower():
+        if 'transtrack' in user_message or 'trans track' in user_message:
             products.append('TransTrack')
-        if 'icebox' in user_message.lower():
+        if 'icebox' in user_message or 'ice box' in user_message:
             products.append('IceBox')
         
         if products:
-            response = f"I understand you're asking about {', '.join(products)}, but I'm not sure exactly what you'd like to know. \n\nI can help with:\n• Product features\n• Pricing\n• Implementation\n• Client list\n• Comparison\n• Contact information\n\nWhat would you like to know?"
+            response = f"I understand you're asking about {', '.join(products)}, but I'm not sure exactly what you'd like to know. \n\nI can help with:\n• Product features\n• Pricing\n• Implementation\n• Client list\n• Comparison\n• Contact information\n• Demo requests\n\nWhat would you like to know?"
         else:
-            response = """I'm not sure I understood that correctly. I can help you with:
+            response = """I'm not sure I understood that correctly. I'm VaspX, here to help you with:
 
 📚 **Products:** Ednect, Desalite Connect, TransTrack, IceBox
 💡 **Information:** Features, Pricing, Clients, Implementation
 📞 **Support:** Contact info, Demo requests, Training
+🤝 **Other:** Careers, Purchase process, Technical specs
+
+You can also speak directly with our team:
+📞 +91 7099020876 / +91 8811047292
 
 What would you like to know about?"""
         
         dispatcher.utter_message(text=response)
         return []
-
 
 class ActionProvideRecommendation(Action):
     """Provide product recommendations based on user needs"""

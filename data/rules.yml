@@ -351,3 +351,85 @@ rules:
   steps:
   - intent: ask_bot_identity
   - action: utter_bot_identity
+
+# ============= EDGE CASE HANDLING RULES =============
+- rule: Handle out of scope queries
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Handle job vacancy inquiries
+  steps:
+  - intent: ask_job_vacancy
+  - action: utter_job_vacancy
+
+- rule: Handle purchase process queries
+  steps:
+  - intent: ask_purchase_process
+  - action: utter_purchase_process
+
+- rule: Provide website information
+  steps:
+  - intent: ask_website
+  - action: utter_website
+
+- rule: Provide social media information
+  steps:
+  - intent: ask_social_media
+  - action: utter_social_media
+
+- rule: Provide payment methods
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_payment_methods
+
+- rule: Provide refund policy
+  steps:
+  - intent: ask_refund_policy
+  - action: utter_refund_policy
+
+- rule: Provide trial period information
+  steps:
+  - intent: ask_trial_period
+  - action: utter_trial_period
+
+- rule: Provide system requirements
+  steps:
+  - intent: ask_system_requirements
+  - action: utter_system_requirements
+
+- rule: Provide mobile app information
+  steps:
+  - intent: ask_mobile_app
+  - action: utter_mobile_app
+
+- rule: Handle data migration queries
+  steps:
+  - intent: ask_data_migration
+  - action: utter_data_migration
+
+- rule: Handle competitor questions
+  steps:
+  - intent: ask_competitors
+  - action: utter_competitors
+
+- rule: Handle language support queries
+  steps:
+  - intent: ask_languages_supported
+  - action: utter_languages_supported
+
+- rule: Handle chitchat
+  steps:
+  - intent: chitchat_general
+  - action: utter_chitchat
+
+- rule: Handle insults gracefully
+  steps:
+  - intent: insult_or_abuse
+  - action: utter_handle_insult
+
+- rule: Connect to human agent
+  steps:
+  - intent: ask_human_agent
+  - action: utter_human_agent
+  

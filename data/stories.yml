@@ -390,3 +390,75 @@ stories:
   - action: utter_thank
   - intent: goodbye
   - action: utter_goodbye
+
+# ============= EDGE CASE STORIES =============
+- story: out of scope query
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: job inquiry flow
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_job_vacancy
+  - action: utter_job_vacancy
+
+- story: purchase process inquiry
+  steps:
+  - intent: ask_purchase_process
+  - action: utter_purchase_process
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: complete onboarding flow
+  steps:
+  - intent: ask_purchase_process
+  - action: utter_purchase_process
+  - intent: ask_trial_period
+  - action: utter_trial_period
+  - intent: ask_for_demo
+  - action: utter_request_demo
+
+- story: technical requirements inquiry
+  steps:
+  - intent: ask_system_requirements
+  - action: utter_system_requirements
+  - intent: ask_mobile_app
+  - action: utter_mobile_app
+
+- story: migration and implementation
+  steps:
+  - intent: ask_data_migration
+  - action: utter_data_migration
+  - intent: ask_implementation_time
+  - action: utter_implementation
+
+- story: chitchat to serious
+  steps:
+  - intent: chitchat_general
+  - action: utter_chitchat
+  - intent: ask_about_ednect
+  - action: utter_about_ednect
+
+- story: frustrated user
+  steps:
+  - intent: insult_or_abuse
+  - action: utter_handle_insult
+  - intent: ask_human_agent
+  - action: utter_human_agent
+
+- story: website and social media
+  steps:
+  - intent: ask_website
+  - action: utter_website
+  - intent: ask_social_media
+  - action: utter_social_media
+
+- story: payment and refund inquiry
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_payment_methods
+  - intent: ask_refund_policy
+  - action: utter_refund_policy
+  
