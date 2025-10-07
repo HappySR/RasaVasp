@@ -2,7 +2,7 @@
 
 # Server where action runs
 action_endpoint:
-  url: "http://localhost:5055/webhook"
+  url: "http://rasa_actions:5055/webhook"
 
 # Tracker store for conversation history (optional - use for production)
 # tracker_store:

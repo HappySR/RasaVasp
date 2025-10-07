@@ -1,0 +1,25 @@
+# Dockerfile.server
+FROM python:3.10-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential gcc git curl swig libffi-dev libssl-dev \
+    libxml2-dev libxslt1-dev python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy and install dependencies
+COPY requirements.txt .
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all project files
+COPY . .
+
+EXPOSE 5005
+
+# Run the Rasa server
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
