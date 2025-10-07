@@ -1,3 +1,4 @@
 .direnv/
 .rasa/
 .venv/
+.env
