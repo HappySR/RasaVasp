@@ -1,0 +1,9 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile.server"
+  },
+  "start": "docker run -p $PORT:5005 -e PORT=$PORT --name rasa_server rasa_server",
+  "env": {
+    "PORT": "5005"
+  }
+}
