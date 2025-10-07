@@ -2,7 +2,7 @@
 
 # Server where action runs
 action_endpoint:
-  url: "${ACTIONS_SERVER_URL}"
+  url: ${ACTIONS_SERVER_URL}
 
 # Tracker store for conversation history (optional - use for production)
 # tracker_store:
