@@ -272,7 +272,7 @@ class ActionFallbackWithContext(Action):
             response = """Thank you for your interest in career opportunities at Vasp Technologies!
 
 For information about job openings and career opportunities, please:
-📧 Email your resume to: [email protected]
+📧 Email your resume to: hr@vasptechnologies.co.in
 📞 Call: +91 7099020876
 
 You can also check our website or LinkedIn page for current openings.
@@ -287,7 +287,7 @@ Is there anything else about our products I can help you with?"""
 
 1️⃣ **Request a Free Demo**
    📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)
-   📧 Email: [email protected]
+   📧 Email: vasptechit2016@gmail.com
 
 2️⃣ **Consultation**
    Our team will understand your requirements

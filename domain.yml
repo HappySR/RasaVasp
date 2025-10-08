@@ -217,12 +217,12 @@ responses:
     - text: "Contact Information:\n
     📞 Ednect/General: +91 7099020876\n
     📞 TransTrack/IceBox: +91 8811047292\n
-    📧 Email: [email protected] / contact@vasptechnologies.com\n
+    📧 Email: vasptechit2016@gmail.com / contact@vasptechnologies.com\n
     📍 Location: Vasp Technologies Pvt. Ltd., #26, D. Neog Path, Ananda Nagar, G.S. Road, Guwahati - 781005, Assam, India\n
     🕐 Hours: Mon-Sat, 9:00 AM - 6:00 PM"
   
   utter_request_demo:
-    - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 [email protected]\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
+    - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 vasptechit2016@gmail.com\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
   
   utter_about_support:
     - text: "We provide dedicated support:\n
@@ -270,7 +270,7 @@ responses:
   
   # ============= PRICING & SECURITY =============
   utter_pricing:
-    - text: "For pricing information:\n\n📞 Contact us for detailed pricing:\n• Ednect/Desalite/General: +91 7099020876\n• TransTrack/IceBox: +91 8811047292\n\n📧 Email: [email protected]\n\nOur services are:\n✓ Cost-effective and budget-friendly\n✓ Customized to your requirements\n✓ Transparent with no hidden costs\n\nWe offer a FREE DEMO to discuss your specific needs and provide accurate pricing. Would you like to schedule one?"
+    - text: "For pricing information:\n\n📞 Contact us for detailed pricing:\n• Ednect/Desalite/General: +91 7099020876\n• TransTrack/IceBox: +91 8811047292\n\n📧 Email: ajit@vasptechnologies.com\n\nOur services are:\n✓ Cost-effective and budget-friendly\n✓ Customized to your requirements\n✓ Transparent with no hidden costs\n\nWe offer a FREE DEMO to discuss your specific needs and provide accurate pricing. Would you like to schedule one?"
   
   utter_security:
     - text: "Security & Privacy:\n✓ Comprehensive data protection\n✓ GDPR and CCPA compliant\n✓ Secure cloud storage\n✓ Privacy policy in place\n✓ Access control and monitoring\n✓ Regular security updates\n\nYour data security is our priority. Visit our website for detailed privacy policy."
@@ -288,25 +288,25 @@ responses:
     - text: "I'm VaspX, an assistant for Vasp Technologies products (Ednect, Desalite Connect, TransTrack, and IceBox). I can only help with information about our products and services.\n\nFor general tech support or unrelated queries, please contact the relevant service provider.\n\nHow can I help you with Vasp Technologies products?"
 
   utter_job_vacancy:
-    - text: "Thank you for your interest in career opportunities at Vasp Technologies!\n\nFor information about job openings and career opportunities, please:\n📧 Email your resume to: [email protected]\n📞 Call: +91 7099020876\n\nYou can also check our website or LinkedIn page for current openings.\n\nIs there anything else about our products I can help you with?"
+    - text: "Thank you for your interest in career opportunities at Vasp Technologies!\n\nFor information about job openings and career opportunities, please:\n📧 Email your resume to: hr@vasptechnologies.co.in\n📞 Call: +91 7099020876\n\nYou can also check our website or LinkedIn page for current openings.\n\nIs there anything else about our products I can help you with?"
 
   utter_purchase_process:
-    - text: "Great! Here's how to get started with our software:\n\n1️⃣ **Request a Free Demo**\n   📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)\n   📧 Email: [email protected]\n\n2️⃣ **Consultation**\n   Our team will understand your requirements\n\n3️⃣ **Customization & Quotation**\n   We'll provide a tailored solution and pricing\n\n4️⃣ **Agreement & Implementation**\n   Once approved, we begin setup and training\n\nWould you like to schedule a demo now?"
+    - text: "Great! Here's how to get started with our software:\n\n1️⃣ **Request a Free Demo**\n   📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)\n   📧 Email: ajit@vasptechnologies.com\n\n2️⃣ **Consultation**\n   Our team will understand your requirements\n\n3️⃣ **Customization & Quotation**\n   We'll provide a tailored solution and pricing\n\n4️⃣ **Agreement & Implementation**\n   Once approved, we begin setup and training\n\nWould you like to schedule a demo now?"
 
   utter_website:
-    - text: "You can find us online at:\n🌐 www.vasptechnologies.com\n\nFor specific product information:\n• Ednect: Available on our main website\n• Desalite Connect: Available on our main website\n• TransTrack: Available on our main website\n• IceBox: Available on our main website\n\nYou can also contact us directly:\n📞 +91 7099020876 / +91 8811047292\n📧 [email protected]"
+    - text: "You can find us online at:\n🌐 www.vasptechnologies.com\n\nFor specific product information:\n• Ednect: Available on our main website or [click here](https://www.ednect.com/)\n• Desalite Connect: Available on our main website or [click here](https://www.desaliteconnect.com/)\n• TransTrack: Available on our main website or [click here](https://thetranstrack.com/)\n• IceBox: Available on our main website or [click here](https://theicebox.co.in/)\n\nYou can also contact us directly:\n📞 +91 7099020876 / +91 8811047292\n📧 ajit@vasptechnologies.com"
 
   utter_social_media:
-    - text: "Connect with us on social media!\n\nFor the latest updates and links to our social media profiles, please:\n📧 Email: [email protected]\n📞 Call: +91 7099020876\n🌐 Visit: www.vasptechnologies.com\n\nOur team can share our official social media handles with you."
+  - text: "Connect with us on social media!\n\n📞 Call: +91 7099020876\n🌐 Website: [www.vasptechnologies.com](https://www.vasptechnologies.com)\n\nFollow us for the latest updates:\n🐦 Twitter (X): [x.com/vasptech](https://x.com/vasptech)\n📘 Facebook: [facebook.com/VaspTechnologies](https://www.facebook.com/VaspTechnologies)\n📸 Instagram: [instagram.com/vasptech](https://www.instagram.com/vasptech/)\n💼 LinkedIn: [linkedin.com/company/vasptechnologies](https://in.linkedin.com/company/vasptechnologies)\n▶️ YouTube: [Vasp Technologies Channel](https://www.youtube.com/channel/UCm5wXCKX1Fjs4Gow-g4-Ptw)"
 
   utter_payment_methods:
-    - text: "Payment Options:\n\n✅ Online Payment Gateway (integrated in Ednect & Desalite)\n✅ Bank Transfer\n✅ Cheque\n✅ Other payment methods as per agreement\n\nFor specific payment terms and options:\n📞 Contact: +91 7099020876\n📧 Email: [email protected]\n\nPayment terms are discussed during the quotation phase based on your requirements."
+  - text: "Payment Options:\n\n✅ Online Payment Gateway (supports PayPal, Visa, Mastercard, Skrill, Western Union, etc.)\n✅ Bank Transfer\n✅ Cheque\n✅ Other payment methods as per agreement\n\nFor specific payment terms and options:\n📞 Contact: +91 7099020876\n📧 Email: ajit@vasptechnologies.com\n\nPayment terms are discussed during the quotation phase based on your requirements."
 
   utter_refund_policy:
-    - text: "For information about our refund and cancellation policies:\n\n📞 Please contact our team: +91 7099020876\n📧 Email: [email protected]\n\nOur policies are discussed and agreed upon during the contract phase. We ensure complete customer satisfaction and work closely with you throughout the implementation process.\n\nWould you like to schedule a consultation to discuss your concerns?"
+    - text: "For information about our refund and cancellation policies:\n\n📞 Please contact our team: +91 7099020876\n📧 Email: ajit@vasptechnologies.com\n\nOur policies are discussed and agreed upon during the contract phase. We ensure complete customer satisfaction and work closely with you throughout the implementation process.\n\nWould you like to schedule a consultation to discuss your concerns?"
 
   utter_trial_period:
-    - text: "We offer a **FREE DEMO** of all our products!\n\n✅ Live demonstration of features\n✅ Q&A session with our team\n✅ Understand how it fits your needs\n✅ No commitment required\n\nTo schedule your free demo:\n📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)\n📧 Email: [email protected]\n\nWhich product would you like to see in action?"
+    - text: "We offer a **FREE DEMO** of all our products!\n\n✅ Live demonstration of features\n✅ Q&A session with our team\n✅ Understand how it fits your needs\n✅ No commitment required\n\nTo schedule your free demo:\n📞 Call: +91 7099020876 (Ednect/Desalite) or +91 8811047292 (TransTrack/IceBox)\n📧 Email: ajit@vasptechnologies.com\n\nWhich product would you like to see in action?"
 
   utter_system_requirements:
     - text: "System Requirements:\n\n**For Ednect & Desalite Connect:**\n☁️ Cloud-based solution (accessible from any device with internet)\n✅ Modern web browser (Chrome, Firefox, Safari, Edge)\n✅ Stable internet connection\n✅ Works on Windows, Mac, Linux, Android, iOS\n\n**For TransTrack & IceBox:**\n✅ Cloud-based with web access\n✅ Can be deployed on-premise if needed\n✅ Specific requirements discussed during consultation\n\nFor detailed technical specifications:\n📞 Contact: +91 8811047292\n\nWould you like to know more about deployment options?"
@@ -315,22 +315,22 @@ responses:
     - text: "Mobile Access:\n\n📱 **Ednect & Desalite Connect:**\n   ✅ Responsive web interface (works on mobile browsers)\n   ✅ Parent portal accessible via mobile\n   ✅ Student portal accessible via mobile\n   \n📱 **TransTrack:**\n   ✅ Mobile-optimized tracking interface\n   \n📱 **IceBox:**\n   ✅ Web-based access from mobile devices\n\nFor information about dedicated mobile apps:\n📞 Contact: +91 7099020876 or +91 8811047292\n\nNative mobile apps can be discussed based on your specific requirements!"
 
   utter_data_migration:
-    - text: "Data Migration Support:\n\n✅ **Yes! We provide comprehensive data migration services**\n\n📋 Our process:\n1. Assessment of your existing data\n2. Data mapping and validation\n3. Secure migration process\n4. Testing and verification\n5. Training on the new system\n\n🔒 Your data security is our priority\n\nData migration is included as part of our implementation process.\n\nFor specific migration requirements:\n📞 Contact: +91 7099020876\n📧 Email: [email protected]\n\nWhat type of data do you need to migrate?"
+    - text: "Data Migration Support:\n\n✅ **Yes! We provide comprehensive data migration services**\n\n📋 Our process:\n1. Assessment of your existing data\n2. Data mapping and validation\n3. Secure migration process\n4. Testing and verification\n5. Training on the new system\n\n🔒 Your data security is our priority\n\nData migration is included as part of our implementation process.\n\nFor specific migration requirements:\n📞 Contact: +91 7099020876\n📧 Email: ajit@vasptechnologies.com\n\nWhat type of data do you need to migrate?"
 
   utter_competitors:
     - text: "We focus on providing the best solutions for our clients rather than comparing with competitors.\n\n**What makes Vasp Technologies special:**\n✅ 10+ years of experience\n✅ 500+ satisfied clients\n✅ 1K+ successful developments\n✅ Customizable solutions\n✅ Dedicated support\n✅ Cost-effective pricing\n✅ Local presence with global standards\n\nWe'd love to show you how our products can meet your specific needs!\n\n📞 Schedule a demo: +91 7099020876\n\nWould you like to know more about any specific product?"
 
   utter_languages_supported:
-    - text: "Language Support:\n\n**Current:**\n✅ English (primary interface)\n✅ Multi-language communication (SMS/Circulars can be sent in regional languages)\n\n**Customization:**\n✅ Interface can be customized for regional languages based on requirements\n✅ Reports can be generated in preferred languages\n✅ We can discuss multi-language support during implementation\n\nFor specific language requirements:\n📞 Contact: +91 7099020876\n📧 Email: [email protected]\n\nWhich language support are you looking for?"
+    - text: "Language Support:\n\n**Current:**\n✅ English (primary interface)\n✅ Multi-language communication (SMS/Circulars can be sent in regional languages)\n\n**Customization:**\n✅ Interface can be customized for regional languages based on requirements\n✅ Reports can be generated in preferred languages\n✅ We can discuss multi-language support during implementation\n\nFor specific language requirements:\n📞 Contact: +91 7099020876\n📧 Email: ajit@vasptechnologies.com\n\nWhich language support are you looking for?"
 
   utter_chitchat:
     - text: "I appreciate the chat! 😊 However, I'm specifically designed to help with Vasp Technologies products and services.\n\nI can help you with:\n• Product information (Ednect, Desalite, TransTrack, IceBox)\n• Features and pricing\n• Demo requests\n• Technical support\n• Contact information\n\nWhat would you like to know about our products?"
 
   utter_handle_insult:
-    - text: "I understand you might be frustrated. I'm here to help!\n\nIf I couldn't answer your question properly, please:\n1. Rephrase your question\n2. Or contact our human support team:\n   📞 +91 7099020876\n   📧 [email protected]\n\nHow can I better assist you with Vasp Technologies products?"
+    - text: "I understand you might be frustrated. I'm here to help!\n\nIf I couldn't answer your question properly, please:\n1. Rephrase your question\n2. Or contact our human support team:\n   📞 +91 7099020876\n   📧 vasptechit2016@gmail.com\n\nHow can I better assist you with Vasp Technologies products?"
 
   utter_human_agent:
-    - text: "I understand you'd like to speak with someone from our team.\n\n**Contact our team directly:**\n📞 **Ednect/Desalite/General:** +91 7099020876\n📞 **TransTrack/IceBox:** +91 8811047292\n📧 **Email:** [email protected] / contact@vasptechnologies.com\n\n🕐 **Office Hours:** Monday-Saturday, 9:00 AM - 6:00 PM\n📍 **Location:** Ananda Nagar, G.S. Road, Guwahati - 781005, Assam\n\nYou can call us directly or request a callback. Our team will be happy to assist you personally!\n\nIs there anything else I can help you with right now?"
+    - text: "I understand you'd like to speak with someone from our team.\n\n**Contact our team directly:**\n📞 **Ednect/Desalite/General:** +91 7099020876\n📞 **TransTrack/IceBox:** +91 8811047292\n📧 **Email:** vasptechit2016@gmail.com / contact@vasptechnologies.com\n\n🕐 **Office Hours:** Monday-Saturday, 9:00 AM - 6:00 PM\n📍 **Location:** Ananda Nagar, G.S. Road, Guwahati - 781005, Assam\n\nYou can call us directly or request a callback. Our team will be happy to assist you personally!\n\nIs there anything else I can help you with right now?"
 
 actions:
   # Custom Actions
