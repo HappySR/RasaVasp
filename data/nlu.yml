@@ -27,6 +27,34 @@ nlu:
     - what products do you have and what do they do?
     - show me comparison of all products
     - which product should I choose?
+    - compare ednect and transtrack
+    - ednect vs transtrack
+    - difference between ednect and transtrack
+    - ednect or transtrack
+    - compare ednect and icebox
+    - ednect vs icebox
+    - difference between ednect and icebox
+    - ednect or icebox
+    - compare desalite and transtrack
+    - desalite vs transtrack
+    - difference between desalite and transtrack
+    - desalite or transtrack
+    - compare desalite and icebox
+    - desalite vs icebox
+    - difference between desalite and icebox
+    - desalite or icebox
+    - compare transtrack and icebox
+    - transtrack vs icebox
+    - difference between transtrack and icebox
+    - transtrack or icebox
+    - compare all four products
+    - difference between all products
+    - compare ednect desalite transtrack icebox
+    - tell me difference between ednect and transtrack
+    - tell me difference between ednect and icebox
+    - tell me difference between desalite and transtrack
+    - tell me difference between desalite and icebox
+    - tell me difference between transtrack and icebox
 
 - intent: ask_recommendation
   examples: |
@@ -603,11 +631,18 @@ nlu:
 - intent: ask_mobile_app
   examples: |
     - mobile app
+    - mobile application
     - do you have an app?
+    - do you have an application?
     - android app
+    - android application
+    - web app
+    - web application
     - ios app
+    - ios application
     - mobile version
     - app download
+    - application download
 
 - intent: ask_data_migration
   examples: |

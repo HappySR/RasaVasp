@@ -22,6 +22,8 @@ pipeline:
   - name: DIETClassifier
     epochs: 200
     constrain_similarities: true
+    entity_recognition: false
+    intent_classification: true
   - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.5

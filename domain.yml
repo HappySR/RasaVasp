@@ -225,15 +225,20 @@ responses:
     - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 vasptechit2016@gmail.com\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
   
   utter_about_support:
-    - text: "We provide dedicated support:\n
-    ✓ Highly experienced team\n
-    ✓ Online and in-person assistance\n
-    ✓ Comprehensive training sessions for staff\n
-    ✓ Hands-on instruction\n
-    ✓ Implementation guidance at every step\n
-    ✓ System upgrades and maintenance\n
-    Our team is available to resolve any ERP-related issues promptly."
-  
+  - text: "We provide dedicated support:\n
+      ✓ Highly experienced team\n  
+      ✓ Online and in-person assistance\n  
+      ✓ Comprehensive training sessions for staff\n  
+      ✓ Hands-on instruction\n  
+      ✓ Implementation guidance at every step\n  
+      ✓ System upgrades and maintenance\n\n  
+
+      Our team is available to resolve any ERP-related issues promptly.\n\n
+
+      📞 **Contact Numbers:** +91 7099020876 / +91 8811047292\n  
+      📧 **General Inquiries:** contact@vasptechnologies.com\n  
+      🖥️ **IT Support:** vasptechit2016@gmail.com"
+
   # ============= COMPANY RESPONSES =============
   utter_about_company:
     - text: "Vasp Technologies is a leading ERP Software Developer with over 10 years of experience. We've served 500+ clients and completed 1K+ developments across the region. We specialize in:\n• School Management (Ednect & Desalite Connect)\n• Transport Management (TransTrack)\n• Cold Storage Management (IceBox)\n\nOur mission is to digitalize institutions and streamline operations with innovative, cost-effective solutions."
@@ -336,9 +341,9 @@ actions:
   # Custom Actions
   - action_compare_products
   - action_intelligent_response
+  - action_provide_recommendation
   - action_extract_context
   - action_fallback_with_context
-  - action_provide_recommendation
 
   - utter_greet
   - utter_goodbye

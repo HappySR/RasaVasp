@@ -175,7 +175,7 @@ rules:
   - intent: ask_training
   - action: utter_training
 
-  # ============= NEW: COMPARISON RULES =============
+# ============= COMPARISON RULES (PRIORITY) =============
 - rule: Handle Ednect vs Desalite comparison
   steps:
   - intent: compare_ednect_desalite
@@ -329,12 +329,6 @@ rules:
   steps:
   - intent: ask_customization
   - action: utter_customization
-  
-# ============= PRODUCT COMPARISON RULE =============
-- rule: Compare products
-  steps:
-  - intent: compare_products
-  - action: utter_compare_products
 
 # ============= BASIC INTERACTION RULES =============
 - rule: Say goodbye anytime the user says goodbye
