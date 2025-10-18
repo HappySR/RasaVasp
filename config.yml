@@ -24,15 +24,16 @@ pipeline:
     constrain_similarities: true
     entity_recognition: false
     intent_classification: true
+    ranking_length: 10
   - name: EntitySynonymMapper
   - name: FallbackClassifier
     threshold: 0.5
 
 policies:
   - name: MemoizationPolicy
-    max_history: 5
+    max_history: 10
   - name: TEDPolicy
-    max_history: 5
+    max_history: 10
     epochs: 200
   - name: RulePolicy
     core_fallback_threshold: 0.4

@@ -88,6 +88,18 @@ slots:
     mappings:
     - type: from_entity
       entity: product_name
+  
+  last_mentioned_product:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: custom
+  
+  conversation_context:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: custom
 
 responses:
   # ============= GENERAL RESPONSES =============
@@ -222,7 +234,7 @@ responses:
     🕐 Hours: Mon-Sat, 9:00 AM - 6:00 PM"
   
   utter_request_demo:
-    - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 vasptechit2016@gmail.com\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
+    - text: "Great! To request a free demo, please contact us:\n📞 +91 7099020876 or +91 8811047292\n📧 ajit@vasptechnologies.com\n\nYou can also visit our website to fill out the demo request form. Our team will guide you through the setup and features!"
   
   utter_about_support:
   - text: "We provide dedicated support:\n

@@ -12,6 +12,11 @@ rules:
   - intent: thank
   - action: utter_thank
 
+- rule: Respond to bot identity question
+  steps:
+  - intent: ask_bot_identity
+  - action: utter_bot_identity
+
 # ============= CONTACT RULES =============
 - rule: Provide contact information on request
   steps:
@@ -23,89 +28,86 @@ rules:
   - intent: ask_for_demo
   - action: utter_request_demo
 
-# ============= EDNECT RULES =============
-- rule: Provide Ednect information
+# ============= CONTEXT-AWARE PRODUCT RULES (Use intelligent action) =============
+- rule: Handle Ednect queries with context
   steps:
   - intent: ask_about_ednect
-  - action: utter_about_ednect
+  - action: action_intelligent_response
 
-- rule: Provide Ednect features
+- rule: Handle Ednect features with context
   steps:
   - intent: ask_ednect_features
-  - action: utter_ednect_features
+  - action: action_intelligent_response
 
-- rule: Provide Ednect clients
-  steps:
-  - intent: ask_ednect_clients
-  - action: utter_ednect_clients
-
-- rule: Provide Ednect pricing
+- rule: Handle Ednect pricing with context
   steps:
   - intent: ask_ednect_pricing
-  - action: utter_ednect_pricing
+  - action: action_intelligent_response
 
-- rule: Provide Ednect implementation info
+- rule: Handle Ednect clients with context
+  steps:
+  - intent: ask_ednect_clients
+  - action: action_intelligent_response
+
+- rule: Handle Ednect implementation with context
   steps:
   - intent: ask_ednect_implementation
-  - action: utter_ednect_implementation
+  - action: action_intelligent_response
 
-# ============= DESALITE RULES =============
-- rule: Provide Desalite information
+- rule: Handle Desalite queries with context
   steps:
   - intent: ask_about_desalite
-  - action: utter_about_desalite
+  - action: action_intelligent_response
 
-- rule: Provide Desalite features
+- rule: Handle Desalite features with context
   steps:
   - intent: ask_desalite_features
-  - action: utter_desalite_features
+  - action: action_intelligent_response
 
-- rule: Provide Desalite clients
+- rule: Handle Desalite clients with context
   steps:
   - intent: ask_desalite_clients
-  - action: utter_desalite_clients
+  - action: action_intelligent_response
 
-# ============= TRANSTRACK RULES =============
-- rule: Provide TransTrack information
+- rule: Handle TransTrack queries with context
   steps:
   - intent: ask_about_transtrack
-  - action: utter_about_transtrack
+  - action: action_intelligent_response
 
-- rule: Provide TransTrack features
+- rule: Handle TransTrack features with context
   steps:
   - intent: ask_transtrack_features
-  - action: utter_transtrack_features
+  - action: action_intelligent_response
 
-- rule: Provide TransTrack benefits
+- rule: Handle TransTrack benefits with context
   steps:
   - intent: ask_transtrack_benefits
-  - action: utter_transtrack_benefits
+  - action: action_intelligent_response
 
-- rule: Provide TransTrack services
+- rule: Handle TransTrack services with context
   steps:
   - intent: ask_transtrack_services
-  - action: utter_transtrack_services
+  - action: action_intelligent_response
 
-# ============= ICEBOX RULES =============
-- rule: Provide IceBox information
+- rule: Handle IceBox queries with context
   steps:
   - intent: ask_about_icebox
-  - action: utter_about_icebox
+  - action: action_intelligent_response
 
-- rule: Provide IceBox features
+- rule: Handle IceBox features with context
   steps:
   - intent: ask_icebox_features
-  - action: utter_icebox_features
+  - action: action_intelligent_response
 
-- rule: Provide IceBox workflow
+- rule: Handle IceBox workflow with context
   steps:
   - intent: ask_icebox_workflow
-  - action: utter_icebox_workflow
+  - action: action_intelligent_response
 
-- rule: Provide IceBox benefits
+- rule: Handle IceBox benefits with context
   steps:
   - intent: ask_icebox_benefits
-  - action: utter_icebox_benefits
+  - action: action_intelligent_response
 
 # ============= COMPANY INFORMATION RULES =============
 - rule: Provide company information
@@ -123,42 +125,42 @@ rules:
   - intent: ask_about_support
   - action: utter_about_support
 
-# ============= FEATURE SPECIFIC RULES =============
+# ============= FEATURE SPECIFIC RULES (Context-aware) =============
 - rule: Provide fee management information
   steps:
   - intent: ask_fee_management
-  - action: utter_fee_management
+  - action: action_intelligent_response
 
 - rule: Provide attendance system information
   steps:
   - intent: ask_attendance_system
-  - action: utter_attendance_system
+  - action: action_intelligent_response
 
 - rule: Provide student management information
   steps:
   - intent: ask_student_management
-  - action: utter_student_management
+  - action: action_intelligent_response
 
 - rule: Provide staff management information
   steps:
   - intent: ask_staff_management
-  - action: utter_staff_management
+  - action: action_intelligent_response
 
 - rule: Provide integration information
   steps:
   - intent: ask_integration
-  - action: utter_integration
+  - action: action_intelligent_response
 
 - rule: Provide customization information
   steps:
   - intent: ask_customization
-  - action: utter_customization
+  - action: action_intelligent_response
 
-# ============= GENERAL INQUIRY RULES =============
+# ============= GENERAL INQUIRY RULES (Context-aware) =============
 - rule: Provide pricing information
   steps:
   - intent: ask_pricing_general
-  - action: utter_pricing
+  - action: action_intelligent_response
 
 - rule: Provide security information
   steps:
@@ -184,7 +186,7 @@ rules:
 - rule: Handle any product comparison
   steps:
   - intent: compare_any_products
-  - action: action_compare_products
+  - action: action_intelligent_response
 
 - rule: Provide product recommendation
   steps:
@@ -195,156 +197,6 @@ rules:
   steps:
   - intent: ask_multiple_products
   - action: action_intelligent_response
-
-# ============= FALLBACK RULE =============
-- rule: Handle fallback with context
-  steps:
-  - intent: nlu_fallback
-  - action: action_fallback_with_context
-
-# ============= BASIC INTERACTION RULES =============
-- rule: Say goodbye anytime
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say thank you response
-  steps:
-  - intent: thank
-  - action: utter_thank
-
-# ============= CONTACT RULES =============
-- rule: Provide contact information
-  steps:
-  - intent: ask_contact_info
-  - action: utter_contact_info
-
-- rule: Provide demo information
-  steps:
-  - intent: ask_for_demo
-  - action: utter_request_demo
-
-# ============= EDNECT RULES =============
-- rule: Provide Ednect information
-  steps:
-  - intent: ask_about_ednect
-  - action: utter_about_ednect
-
-- rule: Provide Ednect features
-  steps:
-  - intent: ask_ednect_features
-  - action: utter_ednect_features
-
-- rule: Provide Ednect clients
-  steps:
-  - intent: ask_ednect_clients
-  - action: utter_ednect_clients
-
-- rule: Provide Ednect pricing
-  steps:
-  - intent: ask_ednect_pricing
-  - action: utter_ednect_pricing
-
-# ============= DESALITE RULES =============
-- rule: Provide Desalite information
-  steps:
-  - intent: ask_about_desalite
-  - action: utter_about_desalite
-
-- rule: Provide Desalite features
-  steps:
-  - intent: ask_desalite_features
-  - action: utter_desalite_features
-
-- rule: Provide Desalite clients
-  steps:
-  - intent: ask_desalite_clients
-  - action: utter_desalite_clients
-
-# ============= TRANSTRACK RULES =============
-- rule: Provide TransTrack information
-  steps:
-  - intent: ask_about_transtrack
-  - action: utter_about_transtrack
-
-- rule: Provide TransTrack features
-  steps:
-  - intent: ask_transtrack_features
-  - action: utter_transtrack_features
-
-- rule: Provide TransTrack benefits
-  steps:
-  - intent: ask_transtrack_benefits
-  - action: utter_transtrack_benefits
-
-# ============= ICEBOX RULES =============
-- rule: Provide IceBox information
-  steps:
-  - intent: ask_about_icebox
-  - action: utter_about_icebox
-
-- rule: Provide IceBox features
-  steps:
-  - intent: ask_icebox_features
-  - action: utter_icebox_features
-
-- rule: Provide IceBox workflow
-  steps:
-  - intent: ask_icebox_workflow
-  - action: utter_icebox_workflow
-
-# ============= COMPANY INFORMATION RULES =============
-- rule: Provide company information
-  steps:
-  - intent: ask_about_company
-  - action: utter_about_company
-
-- rule: Provide location information
-  steps:
-  - intent: ask_about_location
-  - action: utter_location
-
-# ============= FEATURE SPECIFIC RULES =============
-- rule: Provide fee management information
-  steps:
-  - intent: ask_fee_management
-  - action: utter_fee_management
-
-- rule: Provide attendance system information
-  steps:
-  - intent: ask_attendance_system
-  - action: utter_attendance_system
-
-- rule: Provide student management information
-  steps:
-  - intent: ask_student_management
-  - action: utter_student_management
-
-- rule: Provide integration information
-  steps:
-  - intent: ask_integration
-  - action: utter_integration
-
-- rule: Provide customization information
-  steps:
-  - intent: ask_customization
-  - action: utter_customization
-
-# ============= BASIC INTERACTION RULES =============
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say thank you response
-  steps:
-  - intent: thank
-  - action: utter_thank
-
-- rule: Respond to bot identity question
-  steps:
-  - intent: ask_bot_identity
-  - action: utter_bot_identity
 
 # ============= EDGE CASE HANDLING RULES =============
 - rule: Handle out of scope queries
@@ -426,4 +278,9 @@ rules:
   steps:
   - intent: ask_human_agent
   - action: utter_human_agent
-  
+
+# ============= FALLBACK RULE =============
+- rule: Handle fallback with context
+  steps:
+  - intent: nlu_fallback
+  - action: action_fallback_with_context
